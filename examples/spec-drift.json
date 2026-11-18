@@ -1,0 +1,8 @@
+{
+  "baseline": "impls:baseline_passthrough",
+  "candidate": "impls:candidate_normalize_nbsp",
+  "synthetic": {"kind": "generated", "factory": "impls:make_docs", "count": 50, "seed": 7},
+  "real": {"kind": "files", "paths": ["corpus"], "encoding": "utf-8"},
+  "reps": 3,
+  "warmup": 1
+}

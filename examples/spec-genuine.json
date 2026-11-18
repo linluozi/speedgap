@@ -1,0 +1,8 @@
+{
+  "baseline": "impls:baseline_scan",
+  "candidate": "impls:candidate_scan",
+  "synthetic": {"kind": "generated", "factory": "impls:make_docs", "count": 300, "seed": 20261118},
+  "real": {"kind": "files", "paths": ["corpus"], "encoding": "utf-8"},
+  "reps": 5,
+  "warmup": 3
+}

@@ -1,0 +1,8 @@
+{
+  "baseline": "impls:baseline_stats",
+  "candidate": "impls:candidate_stats",
+  "synthetic": {"kind": "generated", "factory": "impls:make_repeated", "count": 200, "seed": 1},
+  "real": {"kind": "files", "paths": ["corpus"], "encoding": "utf-8"},
+  "reps": 5,
+  "warmup": 3
+}

@@ -1,0 +1,3 @@
+中文语料：这是一个用于真实输入测试的文件，包含全角空格 和 emoji 🧪。
+下一行继续：cache、matrix、vortex、xenon 等词混排，用来验证 UTF-8 读取。
+第三行只有 ASCII: extra fox box tax wax.

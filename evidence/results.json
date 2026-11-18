@@ -1,0 +1,4634 @@
+{
+  "tool": "speedgap",
+  "version": "1.0.0",
+  "generated_at": "2026-11-18T06:17:00+00:00",
+  "environment": {
+    "python": "3.12.3",
+    "implementation": "CPython",
+    "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+    "machine": "x86_64",
+    "cpu_count": 4,
+    "cpu_model": "AMD EPYC 7K62 48-Core Processor",
+    "mem_total_kb": 3812564
+  },
+  "python": "3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0]",
+  "scenarios": {
+    "genuine": {
+      "schema": 1,
+      "tool": "speedgap",
+      "version": "1.0.0",
+      "generated_at": "2026-11-18T06:16:59+00:00",
+      "config": {
+        "warmup": 3,
+        "reps": 5,
+        "repeat": 1,
+        "threshold": 1.15,
+        "timer": "time.perf_counter_ns",
+        "custom_serializer": false
+      },
+      "environment": {
+        "python": "3.12.3",
+        "implementation": "CPython",
+        "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "cpu_count": 4,
+        "cpu_model": "AMD EPYC 7K62 48-Core Processor",
+        "mem_total_kb": 3812564
+      },
+      "synthetic": {
+        "n": 5,
+        "median": 13.522075027229667,
+        "p25": 13.380643678356623,
+        "p75": 13.603832373966345,
+        "min": 13.05925822643614,
+        "max": 13.650988169090478,
+        "mean": 13.443359495015851,
+        "rel_stdev": 0.017701892149896804,
+        "baseline_ns_per_call": 10676.76,
+        "candidate_ns_per_call": 786.64,
+        "calls_per_pass": 300,
+        "samples_ns": [
+          13.522075027229667,
+          13.05925822643614,
+          13.380643678356623,
+          13.603832373966345,
+          13.650988169090478
+        ],
+        "inputs": 300
+      },
+      "real": {
+        "n": 5,
+        "median": 19.766688918558078,
+        "p25": 19.72807881773399,
+        "p75": 20.787255563047875,
+        "min": 19.647456535737284,
+        "max": 22.386470194239784,
+        "mean": 20.463190005863403,
+        "rel_stdev": 0.05727676489998652,
+        "baseline_ns_per_call": 7628.125,
+        "candidate_ns_per_call": 374.5,
+        "calls_per_pass": 8,
+        "samples_ns": [
+          19.72807881773399,
+          19.647456535737284,
+          22.386470194239784,
+          20.787255563047875,
+          19.766688918558078
+        ],
+        "inputs": 8
+      },
+      "isolated": {
+        "synthetic": {
+          "n": 300,
+          "median": 18.00463331551139,
+          "p25": 14.883231450963418,
+          "p75": 20.59864403861011,
+          "min": 9.954347826086957,
+          "max": 25.170765027322403,
+          "mean": 17.565781745390503,
+          "rel_stdev": 0.21127829264791684,
+          "total_ratio": 18.093763388884618,
+          "worst": {
+            "name": "synthetic-0176",
+            "speedup": 9.954347826086957
+          },
+          "best": {
+            "name": "synthetic-0043",
+            "speedup": 25.170765027322403
+          },
+          "rows": [
+            {
+              "name": "synthetic-0000",
+              "baseline_ns": 17233.0,
+              "candidate_ns": 771.0,
+              "speedup": 22.3514915693904,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0001",
+              "baseline_ns": 15910.0,
+              "candidate_ns": 751.0,
+              "speedup": 21.18508655126498,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0002",
+              "baseline_ns": 5590.0,
+              "candidate_ns": 481.0,
+              "speedup": 11.621621621621621,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0003",
+              "baseline_ns": 12123.0,
+              "candidate_ns": 631.0,
+              "speedup": 19.212361331220286,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0004",
+              "baseline_ns": 6051.0,
+              "candidate_ns": 491.0,
+              "speedup": 12.323828920570264,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0005",
+              "baseline_ns": 9057.0,
+              "candidate_ns": 571.0,
+              "speedup": 15.861646234676007,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0006",
+              "baseline_ns": 7875.0,
+              "candidate_ns": 531.0,
+              "speedup": 14.830508474576272,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0007",
+              "baseline_ns": 10189.0,
+              "candidate_ns": 601.0,
+              "speedup": 16.95341098169717,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0008",
+              "baseline_ns": 11362.0,
+              "candidate_ns": 611.0,
+              "speedup": 18.595744680851062,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0009",
+              "baseline_ns": 12053.0,
+              "candidate_ns": 631.0,
+              "speedup": 19.101426307448495,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0010",
+              "baseline_ns": 6522.0,
+              "candidate_ns": 531.0,
+              "speedup": 12.282485875706215,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0011",
+              "baseline_ns": 8055.0,
+              "candidate_ns": 541.0,
+              "speedup": 14.88909426987061,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0012",
+              "baseline_ns": 5380.0,
+              "candidate_ns": 441.0,
+              "speedup": 12.199546485260772,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0013",
+              "baseline_ns": 11101.0,
+              "candidate_ns": 611.0,
+              "speedup": 18.168576104746318,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0014",
+              "baseline_ns": 6552.0,
+              "candidate_ns": 491.0,
+              "speedup": 13.344195519348268,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0015",
+              "baseline_ns": 14216.0,
+              "candidate_ns": 691.0,
+              "speedup": 20.573082489146167,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0016",
+              "baseline_ns": 5972.0,
+              "candidate_ns": 461.0,
+              "speedup": 12.954446854663775,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0017",
+              "baseline_ns": 15509.0,
+              "candidate_ns": 732.0,
+              "speedup": 21.187158469945356,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0018",
+              "baseline_ns": 8125.0,
+              "candidate_ns": 521.0,
+              "speedup": 15.595009596928982,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0019",
+              "baseline_ns": 11652.0,
+              "candidate_ns": 601.0,
+              "speedup": 19.387687188019967,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0020",
+              "baseline_ns": 15629.0,
+              "candidate_ns": 711.0,
+              "speedup": 21.981715893108298,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0021",
+              "baseline_ns": 11231.0,
+              "candidate_ns": 602.0,
+              "speedup": 18.656146179401993,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0022",
+              "baseline_ns": 5671.0,
+              "candidate_ns": 481.0,
+              "speedup": 11.79002079002079,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0023",
+              "baseline_ns": 13445.0,
+              "candidate_ns": 661.0,
+              "speedup": 20.340393343419063,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0024",
+              "baseline_ns": 5521.0,
+              "candidate_ns": 461.0,
+              "speedup": 11.976138828633406,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0025",
+              "baseline_ns": 7004.0,
+              "candidate_ns": 501.0,
+              "speedup": 13.980039920159681,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0026",
+              "baseline_ns": 8536.0,
+              "candidate_ns": 561.0,
+              "speedup": 15.215686274509803,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0027",
+              "baseline_ns": 16892.0,
+              "candidate_ns": 782.0,
+              "speedup": 21.601023017902815,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0028",
+              "baseline_ns": 11041.0,
+              "candidate_ns": 622.0,
+              "speedup": 17.7508038585209,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0029",
+              "baseline_ns": 13906.0,
+              "candidate_ns": 681.0,
+              "speedup": 20.419970631424377,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0030",
+              "baseline_ns": 10520.0,
+              "candidate_ns": 611.0,
+              "speedup": 17.217675941080195,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0031",
+              "baseline_ns": 8215.0,
+              "candidate_ns": 551.0,
+              "speedup": 14.909255898366606,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0032",
+              "baseline_ns": 16702.0,
+              "candidate_ns": 752.0,
+              "speedup": 22.210106382978722,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0033",
+              "baseline_ns": 11492.0,
+              "candidate_ns": 622.0,
+              "speedup": 18.475884244372992,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0034",
+              "baseline_ns": 7504.0,
+              "candidate_ns": 531.0,
+              "speedup": 14.131826741996234,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0035",
+              "baseline_ns": 6473.0,
+              "candidate_ns": 511.0,
+              "speedup": 12.667318982387476,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0036",
+              "baseline_ns": 6833.0,
+              "candidate_ns": 501.0,
+              "speedup": 13.638722554890219,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0037",
+              "baseline_ns": 16161.0,
+              "candidate_ns": 731.0,
+              "speedup": 22.108071135430915,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0038",
+              "baseline_ns": 11131.0,
+              "candidate_ns": 651.0,
+              "speedup": 17.098310291858677,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0039",
+              "baseline_ns": 13696.0,
+              "candidate_ns": 681.0,
+              "speedup": 20.111600587371512,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0040",
+              "baseline_ns": 8567.0,
+              "candidate_ns": 531.0,
+              "speedup": 16.13370998116761,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0041",
+              "baseline_ns": 5971.0,
+              "candidate_ns": 491.0,
+              "speedup": 12.160896130346233,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0042",
+              "baseline_ns": 11281.0,
+              "candidate_ns": 581.0,
+              "speedup": 19.416523235800344,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0043",
+              "baseline_ns": 18425.0,
+              "candidate_ns": 732.0,
+              "speedup": 25.170765027322403,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0044",
+              "baseline_ns": 16981.0,
+              "candidate_ns": 742.0,
+              "speedup": 22.88544474393531,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0045",
+              "baseline_ns": 13936.0,
+              "candidate_ns": 641.0,
+              "speedup": 21.741029641185648,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0046",
+              "baseline_ns": 10069.0,
+              "candidate_ns": 601.0,
+              "speedup": 16.753743760399335,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0047",
+              "baseline_ns": 10430.0,
+              "candidate_ns": 611.0,
+              "speedup": 17.07037643207856,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0048",
+              "baseline_ns": 17383.0,
+              "candidate_ns": 731.0,
+              "speedup": 23.779753761969904,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0049",
+              "baseline_ns": 18084.0,
+              "candidate_ns": 741.0,
+              "speedup": 24.40485829959514,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0050",
+              "baseline_ns": 10920.0,
+              "candidate_ns": 611.0,
+              "speedup": 17.872340425531913,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0051",
+              "baseline_ns": 6182.0,
+              "candidate_ns": 471.0,
+              "speedup": 13.125265392781316,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0052",
+              "baseline_ns": 11591.0,
+              "candidate_ns": 601.0,
+              "speedup": 19.286189683860233,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0053",
+              "baseline_ns": 11762.0,
+              "candidate_ns": 621.0,
+              "speedup": 18.940418679549115,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0054",
+              "baseline_ns": 7123.0,
+              "candidate_ns": 511.0,
+              "speedup": 13.939334637964775,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0055",
+              "baseline_ns": 7555.0,
+              "candidate_ns": 521.0,
+              "speedup": 14.500959692898272,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0056",
+              "baseline_ns": 13736.0,
+              "candidate_ns": 671.0,
+              "speedup": 20.470938897168406,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0057",
+              "baseline_ns": 10981.0,
+              "candidate_ns": 611.0,
+              "speedup": 17.972176759410804,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0058",
+              "baseline_ns": 13025.0,
+              "candidate_ns": 651.0,
+              "speedup": 20.007680491551458,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0059",
+              "baseline_ns": 16070.0,
+              "candidate_ns": 732.0,
+              "speedup": 21.953551912568305,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0060",
+              "baseline_ns": 12884.0,
+              "candidate_ns": 681.0,
+              "speedup": 18.919236417033773,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0061",
+              "baseline_ns": 14187.0,
+              "candidate_ns": 692.0,
+              "speedup": 20.501445086705203,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0062",
+              "baseline_ns": 8727.0,
+              "candidate_ns": 581.0,
+              "speedup": 15.02065404475043,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0063",
+              "baseline_ns": 7724.0,
+              "candidate_ns": 521.0,
+              "speedup": 14.825335892514396,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0064",
+              "baseline_ns": 11893.0,
+              "candidate_ns": 652.0,
+              "speedup": 18.24079754601227,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0065",
+              "baseline_ns": 6793.0,
+              "candidate_ns": 491.0,
+              "speedup": 13.835030549898168,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0066",
+              "baseline_ns": 5641.0,
+              "candidate_ns": 481.0,
+              "speedup": 11.727650727650728,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0067",
+              "baseline_ns": 10079.0,
+              "candidate_ns": 581.0,
+              "speedup": 17.347676419965577,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0068",
+              "baseline_ns": 15950.0,
+              "candidate_ns": 732.0,
+              "speedup": 21.7896174863388,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0069",
+              "baseline_ns": 12053.0,
+              "candidate_ns": 621.0,
+              "speedup": 19.40901771336554,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0070",
+              "baseline_ns": 8426.0,
+              "candidate_ns": 551.0,
+              "speedup": 15.292196007259529,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0071",
+              "baseline_ns": 11411.0,
+              "candidate_ns": 622.0,
+              "speedup": 18.34565916398714,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0072",
+              "baseline_ns": 16561.0,
+              "candidate_ns": 731.0,
+              "speedup": 22.655266757865938,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0073",
+              "baseline_ns": 12213.0,
+              "candidate_ns": 611.0,
+              "speedup": 19.988543371522095,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0074",
+              "baseline_ns": 12003.0,
+              "candidate_ns": 611.0,
+              "speedup": 19.644844517184943,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0075",
+              "baseline_ns": 5781.0,
+              "candidate_ns": 471.0,
+              "speedup": 12.273885350318471,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0076",
+              "baseline_ns": 15629.0,
+              "candidate_ns": 771.0,
+              "speedup": 20.27107652399481,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0077",
+              "baseline_ns": 4779.0,
+              "candidate_ns": 451.0,
+              "speedup": 10.596452328159645,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0078",
+              "baseline_ns": 14196.0,
+              "candidate_ns": 661.0,
+              "speedup": 21.476550680786687,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0079",
+              "baseline_ns": 6452.0,
+              "candidate_ns": 501.0,
+              "speedup": 12.878243512974052,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0080",
+              "baseline_ns": 12925.0,
+              "candidate_ns": 691.0,
+              "speedup": 18.70477568740955,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0081",
+              "baseline_ns": 15269.0,
+              "candidate_ns": 701.0,
+              "speedup": 21.781740370898717,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0082",
+              "baseline_ns": 12644.0,
+              "candidate_ns": 701.0,
+              "speedup": 18.037089871611983,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0083",
+              "baseline_ns": 8165.0,
+              "candidate_ns": 521.0,
+              "speedup": 15.671785028790786,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0084",
+              "baseline_ns": 6442.0,
+              "candidate_ns": 501.0,
+              "speedup": 12.858283433133732,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0085",
+              "baseline_ns": 8787.0,
+              "candidate_ns": 551.0,
+              "speedup": 15.947368421052632,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0086",
+              "baseline_ns": 14337.0,
+              "candidate_ns": 661.0,
+              "speedup": 21.689863842662632,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0087",
+              "baseline_ns": 15018.0,
+              "candidate_ns": 701.0,
+              "speedup": 21.42368045649073,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0088",
+              "baseline_ns": 9407.0,
+              "candidate_ns": 571.0,
+              "speedup": 16.47460595446585,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0089",
+              "baseline_ns": 16821.0,
+              "candidate_ns": 732.0,
+              "speedup": 22.979508196721312,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0090",
+              "baseline_ns": 4979.0,
+              "candidate_ns": 461.0,
+              "speedup": 10.800433839479393,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0091",
+              "baseline_ns": 12564.0,
+              "candidate_ns": 611.0,
+              "speedup": 20.563011456628477,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0092",
+              "baseline_ns": 11051.0,
+              "candidate_ns": 631.0,
+              "speedup": 17.513470681458003,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0093",
+              "baseline_ns": 14998.0,
+              "candidate_ns": 711.0,
+              "speedup": 21.09423347398031,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0094",
+              "baseline_ns": 9898.0,
+              "candidate_ns": 581.0,
+              "speedup": 17.03614457831325,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0095",
+              "baseline_ns": 14697.0,
+              "candidate_ns": 701.0,
+              "speedup": 20.96576319543509,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0096",
+              "baseline_ns": 14717.0,
+              "candidate_ns": 711.0,
+              "speedup": 20.69901547116737,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0097",
+              "baseline_ns": 5220.0,
+              "candidate_ns": 481.0,
+              "speedup": 10.852390852390853,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0098",
+              "baseline_ns": 6532.0,
+              "candidate_ns": 521.0,
+              "speedup": 12.53742802303263,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0099",
+              "baseline_ns": 5410.0,
+              "candidate_ns": 481.0,
+              "speedup": 11.247401247401248,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0100",
+              "baseline_ns": 11331.0,
+              "candidate_ns": 621.0,
+              "speedup": 18.246376811594203,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0101",
+              "baseline_ns": 10780.0,
+              "candidate_ns": 611.0,
+              "speedup": 17.643207855973813,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0102",
+              "baseline_ns": 16941.0,
+              "candidate_ns": 771.0,
+              "speedup": 21.972762645914397,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0103",
+              "baseline_ns": 6362.0,
+              "candidate_ns": 481.0,
+              "speedup": 13.226611226611226,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0104",
+              "baseline_ns": 8046.0,
+              "candidate_ns": 531.0,
+              "speedup": 15.152542372881356,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0105",
+              "baseline_ns": 11752.0,
+              "candidate_ns": 631.0,
+              "speedup": 18.624405705229794,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0106",
+              "baseline_ns": 15579.0,
+              "candidate_ns": 741.0,
+              "speedup": 21.024291497975707,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0107",
+              "baseline_ns": 9979.0,
+              "candidate_ns": 591.0,
+              "speedup": 16.884940778341793,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0108",
+              "baseline_ns": 12394.0,
+              "candidate_ns": 631.0,
+              "speedup": 19.641838351822503,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0109",
+              "baseline_ns": 7384.0,
+              "candidate_ns": 511.0,
+              "speedup": 14.450097847358121,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0110",
+              "baseline_ns": 16922.0,
+              "candidate_ns": 752.0,
+              "speedup": 22.502659574468087,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0111",
+              "baseline_ns": 8416.0,
+              "candidate_ns": 551.0,
+              "speedup": 15.27404718693285,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0112",
+              "baseline_ns": 8386.0,
+              "candidate_ns": 551.0,
+              "speedup": 15.219600725952812,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0113",
+              "baseline_ns": 14528.0,
+              "candidate_ns": 692.0,
+              "speedup": 20.99421965317919,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0114",
+              "baseline_ns": 7885.0,
+              "candidate_ns": 541.0,
+              "speedup": 14.574861367837338,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0115",
+              "baseline_ns": 12914.0,
+              "candidate_ns": 661.0,
+              "speedup": 19.537065052950076,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0116",
+              "baseline_ns": 13495.0,
+              "candidate_ns": 671.0,
+              "speedup": 20.11177347242921,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0117",
+              "baseline_ns": 6432.0,
+              "candidate_ns": 501.0,
+              "speedup": 12.838323353293413,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0118",
+              "baseline_ns": 14246.0,
+              "candidate_ns": 692.0,
+              "speedup": 20.58670520231214,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0119",
+              "baseline_ns": 7394.0,
+              "candidate_ns": 521.0,
+              "speedup": 14.191938579654511,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0120",
+              "baseline_ns": 5370.0,
+              "candidate_ns": 461.0,
+              "speedup": 11.648590021691973,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0121",
+              "baseline_ns": 6312.0,
+              "candidate_ns": 511.0,
+              "speedup": 12.352250489236791,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0122",
+              "baseline_ns": 13545.0,
+              "candidate_ns": 661.0,
+              "speedup": 20.491679273827533,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0123",
+              "baseline_ns": 15499.0,
+              "candidate_ns": 802.0,
+              "speedup": 19.325436408977556,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0124",
+              "baseline_ns": 5019.0,
+              "candidate_ns": 461.0,
+              "speedup": 10.887201735357918,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0125",
+              "baseline_ns": 4809.0,
+              "candidate_ns": 451.0,
+              "speedup": 10.662971175166296,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0126",
+              "baseline_ns": 12694.0,
+              "candidate_ns": 652.0,
+              "speedup": 19.469325153374232,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0127",
+              "baseline_ns": 14317.0,
+              "candidate_ns": 722.0,
+              "speedup": 19.829639889196677,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0128",
+              "baseline_ns": 8936.0,
+              "candidate_ns": 571.0,
+              "speedup": 15.649737302977233,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0129",
+              "baseline_ns": 15910.0,
+              "candidate_ns": 731.0,
+              "speedup": 21.764705882352942,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0130",
+              "baseline_ns": 9487.0,
+              "candidate_ns": 591.0,
+              "speedup": 16.052453468697124,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0131",
+              "baseline_ns": 11702.0,
+              "candidate_ns": 621.0,
+              "speedup": 18.843800322061192,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0132",
+              "baseline_ns": 10650.0,
+              "candidate_ns": 601.0,
+              "speedup": 17.72046589018303,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0133",
+              "baseline_ns": 8726.0,
+              "candidate_ns": 541.0,
+              "speedup": 16.129390018484287,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0134",
+              "baseline_ns": 14316.0,
+              "candidate_ns": 761.0,
+              "speedup": 18.81208935611038,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0135",
+              "baseline_ns": 12794.0,
+              "candidate_ns": 661.0,
+              "speedup": 19.35552193645991,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0136",
+              "baseline_ns": 11030.0,
+              "candidate_ns": 611.0,
+              "speedup": 18.052373158756136,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0137",
+              "baseline_ns": 16161.0,
+              "candidate_ns": 751.0,
+              "speedup": 21.51930758988016,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0138",
+              "baseline_ns": 7915.0,
+              "candidate_ns": 521.0,
+              "speedup": 15.191938579654511,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0139",
+              "baseline_ns": 6663.0,
+              "candidate_ns": 491.0,
+              "speedup": 13.570264765784113,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0140",
+              "baseline_ns": 8557.0,
+              "candidate_ns": 591.0,
+              "speedup": 14.478849407783418,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0141",
+              "baseline_ns": 15139.0,
+              "candidate_ns": 721.0,
+              "speedup": 20.997226074895977,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0142",
+              "baseline_ns": 5771.0,
+              "candidate_ns": 480.0,
+              "speedup": 12.022916666666667,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0143",
+              "baseline_ns": 10961.0,
+              "candidate_ns": 581.0,
+              "speedup": 18.865748709122204,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0144",
+              "baseline_ns": 11552.0,
+              "candidate_ns": 581.0,
+              "speedup": 19.882960413080895,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0145",
+              "baseline_ns": 18756.0,
+              "candidate_ns": 791.0,
+              "speedup": 23.711757269279392,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0146",
+              "baseline_ns": 17253.0,
+              "candidate_ns": 721.0,
+              "speedup": 23.929264909847433,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0147",
+              "baseline_ns": 4920.0,
+              "candidate_ns": 461.0,
+              "speedup": 10.672451193058569,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0148",
+              "baseline_ns": 8676.0,
+              "candidate_ns": 551.0,
+              "speedup": 15.745916515426497,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0149",
+              "baseline_ns": 16220.0,
+              "candidate_ns": 762.0,
+              "speedup": 21.286089238845143,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0150",
+              "baseline_ns": 5079.0,
+              "candidate_ns": 481.0,
+              "speedup": 10.559251559251559,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0151",
+              "baseline_ns": 8266.0,
+              "candidate_ns": 531.0,
+              "speedup": 15.566854990583805,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0152",
+              "baseline_ns": 13094.0,
+              "candidate_ns": 651.0,
+              "speedup": 20.113671274961597,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0153",
+              "baseline_ns": 8075.0,
+              "candidate_ns": 511.0,
+              "speedup": 15.802348336594912,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0154",
+              "baseline_ns": 11161.0,
+              "candidate_ns": 651.0,
+              "speedup": 17.144393241167435,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0155",
+              "baseline_ns": 8716.0,
+              "candidate_ns": 551.0,
+              "speedup": 15.818511796733212,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0156",
+              "baseline_ns": 15049.0,
+              "candidate_ns": 691.0,
+              "speedup": 21.778581765557163,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0157",
+              "baseline_ns": 16120.0,
+              "candidate_ns": 711.0,
+              "speedup": 22.672292545710267,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0158",
+              "baseline_ns": 17413.0,
+              "candidate_ns": 771.0,
+              "speedup": 22.58495460440986,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0159",
+              "baseline_ns": 15569.0,
+              "candidate_ns": 712.0,
+              "speedup": 21.866573033707866,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0160",
+              "baseline_ns": 13035.0,
+              "candidate_ns": 641.0,
+              "speedup": 20.33541341653666,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0161",
+              "baseline_ns": 18274.0,
+              "candidate_ns": 771.0,
+              "speedup": 23.701686121919586,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0162",
+              "baseline_ns": 17033.0,
+              "candidate_ns": 741.0,
+              "speedup": 22.98650472334683,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0163",
+              "baseline_ns": 10610.0,
+              "candidate_ns": 631.0,
+              "speedup": 16.814580031695723,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0164",
+              "baseline_ns": 11983.0,
+              "candidate_ns": 621.0,
+              "speedup": 19.296296296296298,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0165",
+              "baseline_ns": 8987.0,
+              "candidate_ns": 541.0,
+              "speedup": 16.611829944547136,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0166",
+              "baseline_ns": 7805.0,
+              "candidate_ns": 521.0,
+              "speedup": 14.980806142034549,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0167",
+              "baseline_ns": 5671.0,
+              "candidate_ns": 481.0,
+              "speedup": 11.79002079002079,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0168",
+              "baseline_ns": 16551.0,
+              "candidate_ns": 731.0,
+              "speedup": 22.64158686730506,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0169",
+              "baseline_ns": 8426.0,
+              "candidate_ns": 551.0,
+              "speedup": 15.292196007259529,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0170",
+              "baseline_ns": 8886.0,
+              "candidate_ns": 592.0,
+              "speedup": 15.010135135135135,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0171",
+              "baseline_ns": 13455.0,
+              "candidate_ns": 651.0,
+              "speedup": 20.668202764976957,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0172",
+              "baseline_ns": 4599.0,
+              "candidate_ns": 460.0,
+              "speedup": 9.997826086956522,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0173",
+              "baseline_ns": 9759.0,
+              "candidate_ns": 571.0,
+              "speedup": 17.09106830122592,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0174",
+              "baseline_ns": 10319.0,
+              "candidate_ns": 581.0,
+              "speedup": 17.76075731497418,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0175",
+              "baseline_ns": 14908.0,
+              "candidate_ns": 702.0,
+              "speedup": 21.236467236467238,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0176",
+              "baseline_ns": 4579.0,
+              "candidate_ns": 460.0,
+              "speedup": 9.954347826086957,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0177",
+              "baseline_ns": 13245.0,
+              "candidate_ns": 661.0,
+              "speedup": 20.03782148260212,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0178",
+              "baseline_ns": 7745.0,
+              "candidate_ns": 521.0,
+              "speedup": 14.865642994241842,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0179",
+              "baseline_ns": 9237.0,
+              "candidate_ns": 571.0,
+              "speedup": 16.176882661996498,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0180",
+              "baseline_ns": 8596.0,
+              "candidate_ns": 561.0,
+              "speedup": 15.322638146167558,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0181",
+              "baseline_ns": 5100.0,
+              "candidate_ns": 460.0,
+              "speedup": 11.08695652173913,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0182",
+              "baseline_ns": 6602.0,
+              "candidate_ns": 511.0,
+              "speedup": 12.91976516634051,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0183",
+              "baseline_ns": 9417.0,
+              "candidate_ns": 561.0,
+              "speedup": 16.78609625668449,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0184",
+              "baseline_ns": 10681.0,
+              "candidate_ns": 591.0,
+              "speedup": 18.072758037225043,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0185",
+              "baseline_ns": 4969.0,
+              "candidate_ns": 461.0,
+              "speedup": 10.778741865509762,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0186",
+              "baseline_ns": 13516.0,
+              "candidate_ns": 672.0,
+              "speedup": 20.113095238095237,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0187",
+              "baseline_ns": 13095.0,
+              "candidate_ns": 692.0,
+              "speedup": 18.923410404624278,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0188",
+              "baseline_ns": 10660.0,
+              "candidate_ns": 581.0,
+              "speedup": 18.347676419965577,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0189",
+              "baseline_ns": 13155.0,
+              "candidate_ns": 661.0,
+              "speedup": 19.901664145234495,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0190",
+              "baseline_ns": 4679.0,
+              "candidate_ns": 460.0,
+              "speedup": 10.171739130434782,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0191",
+              "baseline_ns": 7745.0,
+              "candidate_ns": 531.0,
+              "speedup": 14.585687382297552,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0192",
+              "baseline_ns": 12704.0,
+              "candidate_ns": 651.0,
+              "speedup": 19.51459293394777,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0193",
+              "baseline_ns": 8265.0,
+              "candidate_ns": 551.0,
+              "speedup": 15.0,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0194",
+              "baseline_ns": 15119.0,
+              "candidate_ns": 682.0,
+              "speedup": 22.168621700879765,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0195",
+              "baseline_ns": 7454.0,
+              "candidate_ns": 511.0,
+              "speedup": 14.587084148727984,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0196",
+              "baseline_ns": 10470.0,
+              "candidate_ns": 591.0,
+              "speedup": 17.715736040609137,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0197",
+              "baseline_ns": 11812.0,
+              "candidate_ns": 632.0,
+              "speedup": 18.689873417721518,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0198",
+              "baseline_ns": 5600.0,
+              "candidate_ns": 471.0,
+              "speedup": 11.889596602972398,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0199",
+              "baseline_ns": 13766.0,
+              "candidate_ns": 671.0,
+              "speedup": 20.515648286140088,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0200",
+              "baseline_ns": 5671.0,
+              "candidate_ns": 481.0,
+              "speedup": 11.79002079002079,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0201",
+              "baseline_ns": 5931.0,
+              "candidate_ns": 471.0,
+              "speedup": 12.59235668789809,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0202",
+              "baseline_ns": 5801.0,
+              "candidate_ns": 491.0,
+              "speedup": 11.814663951120163,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0203",
+              "baseline_ns": 13726.0,
+              "candidate_ns": 631.0,
+              "speedup": 21.752773375594295,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0204",
+              "baseline_ns": 13886.0,
+              "candidate_ns": 671.0,
+              "speedup": 20.694485842026825,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0205",
+              "baseline_ns": 9908.0,
+              "candidate_ns": 561.0,
+              "speedup": 17.661319073083778,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0206",
+              "baseline_ns": 8055.0,
+              "candidate_ns": 571.0,
+              "speedup": 14.106830122591944,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0207",
+              "baseline_ns": 16602.0,
+              "candidate_ns": 741.0,
+              "speedup": 22.40485829959514,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0208",
+              "baseline_ns": 9749.0,
+              "candidate_ns": 561.0,
+              "speedup": 17.37789661319073,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0209",
+              "baseline_ns": 11772.0,
+              "candidate_ns": 611.0,
+              "speedup": 19.266775777414075,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0210",
+              "baseline_ns": 10369.0,
+              "candidate_ns": 571.0,
+              "speedup": 18.15936952714536,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0211",
+              "baseline_ns": 6231.0,
+              "candidate_ns": 481.0,
+              "speedup": 12.954261954261954,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0212",
+              "baseline_ns": 15058.0,
+              "candidate_ns": 692.0,
+              "speedup": 21.760115606936417,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0213",
+              "baseline_ns": 4799.0,
+              "candidate_ns": 461.0,
+              "speedup": 10.40997830802603,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0214",
+              "baseline_ns": 12233.0,
+              "candidate_ns": 611.0,
+              "speedup": 20.02127659574468,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0215",
+              "baseline_ns": 7484.0,
+              "candidate_ns": 501.0,
+              "speedup": 14.93812375249501,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0216",
+              "baseline_ns": 5010.0,
+              "candidate_ns": 461.0,
+              "speedup": 10.86767895878525,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0217",
+              "baseline_ns": 5600.0,
+              "candidate_ns": 461.0,
+              "speedup": 12.147505422993492,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0218",
+              "baseline_ns": 8646.0,
+              "candidate_ns": 561.0,
+              "speedup": 15.411764705882353,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0219",
+              "baseline_ns": 15149.0,
+              "candidate_ns": 682.0,
+              "speedup": 22.212609970674485,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0220",
+              "baseline_ns": 14187.0,
+              "candidate_ns": 671.0,
+              "speedup": 21.14307004470939,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0221",
+              "baseline_ns": 17383.0,
+              "candidate_ns": 711.0,
+              "speedup": 24.448663853727144,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0222",
+              "baseline_ns": 11433.0,
+              "candidate_ns": 651.0,
+              "speedup": 17.56221198156682,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0223",
+              "baseline_ns": 8426.0,
+              "candidate_ns": 521.0,
+              "speedup": 16.17274472168906,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0224",
+              "baseline_ns": 13495.0,
+              "candidate_ns": 641.0,
+              "speedup": 21.053042121684868,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0225",
+              "baseline_ns": 12163.0,
+              "candidate_ns": 612.0,
+              "speedup": 19.874183006535947,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0226",
+              "baseline_ns": 14167.0,
+              "candidate_ns": 661.0,
+              "speedup": 21.43267776096823,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0227",
+              "baseline_ns": 11051.0,
+              "candidate_ns": 591.0,
+              "speedup": 18.698815566835872,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0228",
+              "baseline_ns": 18625.0,
+              "candidate_ns": 801.0,
+              "speedup": 23.252184769038703,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0229",
+              "baseline_ns": 13425.0,
+              "candidate_ns": 641.0,
+              "speedup": 20.94383775351014,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0230",
+              "baseline_ns": 13876.0,
+              "candidate_ns": 652.0,
+              "speedup": 21.282208588957054,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0231",
+              "baseline_ns": 12814.0,
+              "candidate_ns": 621.0,
+              "speedup": 20.634460547504027,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0232",
+              "baseline_ns": 7584.0,
+              "candidate_ns": 501.0,
+              "speedup": 15.137724550898204,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0233",
+              "baseline_ns": 7394.0,
+              "candidate_ns": 531.0,
+              "speedup": 13.924670433145009,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0234",
+              "baseline_ns": 8366.0,
+              "candidate_ns": 551.0,
+              "speedup": 15.183303085299455,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0235",
+              "baseline_ns": 10039.0,
+              "candidate_ns": 601.0,
+              "speedup": 16.703826955074874,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0236",
+              "baseline_ns": 5931.0,
+              "candidate_ns": 471.0,
+              "speedup": 12.59235668789809,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0237",
+              "baseline_ns": 15759.0,
+              "candidate_ns": 712.0,
+              "speedup": 22.133426966292134,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0238",
+              "baseline_ns": 16351.0,
+              "candidate_ns": 731.0,
+              "speedup": 22.367989056087552,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0239",
+              "baseline_ns": 17983.0,
+              "candidate_ns": 772.0,
+              "speedup": 23.2940414507772,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0240",
+              "baseline_ns": 9778.0,
+              "candidate_ns": 581.0,
+              "speedup": 16.82960413080895,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0241",
+              "baseline_ns": 9117.0,
+              "candidate_ns": 531.0,
+              "speedup": 17.16949152542373,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0242",
+              "baseline_ns": 17583.0,
+              "candidate_ns": 781.0,
+              "speedup": 22.513444302176698,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0243",
+              "baseline_ns": 13405.0,
+              "candidate_ns": 692.0,
+              "speedup": 19.371387283236995,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0244",
+              "baseline_ns": 7183.0,
+              "candidate_ns": 481.0,
+              "speedup": 14.933471933471933,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0245",
+              "baseline_ns": 14106.0,
+              "candidate_ns": 661.0,
+              "speedup": 21.340393343419063,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0246",
+              "baseline_ns": 8576.0,
+              "candidate_ns": 551.0,
+              "speedup": 15.56442831215971,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0247",
+              "baseline_ns": 11371.0,
+              "candidate_ns": 621.0,
+              "speedup": 18.310789049919485,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0248",
+              "baseline_ns": 15449.0,
+              "candidate_ns": 701.0,
+              "speedup": 22.03851640513552,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0249",
+              "baseline_ns": 12042.0,
+              "candidate_ns": 612.0,
+              "speedup": 19.676470588235293,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0250",
+              "baseline_ns": 12413.0,
+              "candidate_ns": 631.0,
+              "speedup": 19.671949286846274,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0251",
+              "baseline_ns": 8225.0,
+              "candidate_ns": 541.0,
+              "speedup": 15.203327171903881,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0252",
+              "baseline_ns": 5179.0,
+              "candidate_ns": 451.0,
+              "speedup": 11.483370288248336,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0253",
+              "baseline_ns": 7995.0,
+              "candidate_ns": 521.0,
+              "speedup": 15.345489443378119,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0254",
+              "baseline_ns": 14557.0,
+              "candidate_ns": 672.0,
+              "speedup": 21.66220238095238,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0255",
+              "baseline_ns": 15629.0,
+              "candidate_ns": 702.0,
+              "speedup": 22.263532763532762,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0256",
+              "baseline_ns": 6111.0,
+              "candidate_ns": 480.0,
+              "speedup": 12.73125,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0257",
+              "baseline_ns": 17243.0,
+              "candidate_ns": 752.0,
+              "speedup": 22.929521276595743,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0258",
+              "baseline_ns": 15509.0,
+              "candidate_ns": 702.0,
+              "speedup": 22.09259259259259,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0259",
+              "baseline_ns": 18174.0,
+              "candidate_ns": 792.0,
+              "speedup": 22.946969696969695,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0260",
+              "baseline_ns": 14868.0,
+              "candidate_ns": 671.0,
+              "speedup": 22.157973174366617,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0261",
+              "baseline_ns": 9367.0,
+              "candidate_ns": 581.0,
+              "speedup": 16.122203098106713,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0262",
+              "baseline_ns": 15269.0,
+              "candidate_ns": 691.0,
+              "speedup": 22.096960926193923,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0263",
+              "baseline_ns": 10950.0,
+              "candidate_ns": 621.0,
+              "speedup": 17.632850241545892,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0264",
+              "baseline_ns": 11742.0,
+              "candidate_ns": 641.0,
+              "speedup": 18.318252730109204,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0265",
+              "baseline_ns": 18464.0,
+              "candidate_ns": 752.0,
+              "speedup": 24.5531914893617,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0266",
+              "baseline_ns": 10520.0,
+              "candidate_ns": 591.0,
+              "speedup": 17.800338409475465,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0267",
+              "baseline_ns": 6191.0,
+              "candidate_ns": 490.0,
+              "speedup": 12.63469387755102,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0268",
+              "baseline_ns": 11762.0,
+              "candidate_ns": 642.0,
+              "speedup": 18.3208722741433,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0269",
+              "baseline_ns": 9367.0,
+              "candidate_ns": 581.0,
+              "speedup": 16.122203098106713,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0270",
+              "baseline_ns": 6372.0,
+              "candidate_ns": 481.0,
+              "speedup": 13.247401247401248,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0271",
+              "baseline_ns": 14637.0,
+              "candidate_ns": 721.0,
+              "speedup": 20.300970873786408,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0272",
+              "baseline_ns": 14958.0,
+              "candidate_ns": 712.0,
+              "speedup": 21.008426966292134,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0273",
+              "baseline_ns": 4459.0,
+              "candidate_ns": 431.0,
+              "speedup": 10.345707656612529,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0274",
+              "baseline_ns": 13195.0,
+              "candidate_ns": 672.0,
+              "speedup": 19.635416666666668,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0275",
+              "baseline_ns": 12384.0,
+              "candidate_ns": 642.0,
+              "speedup": 19.289719626168225,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0276",
+              "baseline_ns": 9849.0,
+              "candidate_ns": 571.0,
+              "speedup": 17.248686514886163,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0277",
+              "baseline_ns": 16070.0,
+              "candidate_ns": 761.0,
+              "speedup": 21.11695137976347,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0278",
+              "baseline_ns": 10490.0,
+              "candidate_ns": 591.0,
+              "speedup": 17.749576988155667,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0279",
+              "baseline_ns": 5710.0,
+              "candidate_ns": 501.0,
+              "speedup": 11.397205588822356,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0280",
+              "baseline_ns": 9437.0,
+              "candidate_ns": 601.0,
+              "speedup": 15.70216306156406,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0281",
+              "baseline_ns": 14337.0,
+              "candidate_ns": 711.0,
+              "speedup": 20.164556962025316,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0282",
+              "baseline_ns": 12704.0,
+              "candidate_ns": 652.0,
+              "speedup": 19.484662576687118,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0283",
+              "baseline_ns": 10490.0,
+              "candidate_ns": 631.0,
+              "speedup": 16.624405705229794,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0284",
+              "baseline_ns": 9568.0,
+              "candidate_ns": 561.0,
+              "speedup": 17.055258467023172,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0285",
+              "baseline_ns": 7123.0,
+              "candidate_ns": 511.0,
+              "speedup": 13.939334637964775,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0286",
+              "baseline_ns": 16371.0,
+              "candidate_ns": 781.0,
+              "speedup": 20.96158770806658,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0287",
+              "baseline_ns": 14838.0,
+              "candidate_ns": 712.0,
+              "speedup": 20.839887640449437,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0288",
+              "baseline_ns": 5030.0,
+              "candidate_ns": 471.0,
+              "speedup": 10.679405520169851,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0289",
+              "baseline_ns": 8596.0,
+              "candidate_ns": 581.0,
+              "speedup": 14.795180722891565,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0290",
+              "baseline_ns": 14878.0,
+              "candidate_ns": 701.0,
+              "speedup": 21.223965763195434,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0291",
+              "baseline_ns": 8686.0,
+              "candidate_ns": 611.0,
+              "speedup": 14.216039279869067,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0292",
+              "baseline_ns": 13416.0,
+              "candidate_ns": 652.0,
+              "speedup": 20.57668711656442,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0293",
+              "baseline_ns": 6231.0,
+              "candidate_ns": 501.0,
+              "speedup": 12.437125748502995,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0294",
+              "baseline_ns": 10039.0,
+              "candidate_ns": 581.0,
+              "speedup": 17.27882960413081,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0295",
+              "baseline_ns": 11151.0,
+              "candidate_ns": 601.0,
+              "speedup": 18.554076539101498,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0296",
+              "baseline_ns": 8987.0,
+              "candidate_ns": 571.0,
+              "speedup": 15.73905429071804,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0297",
+              "baseline_ns": 6732.0,
+              "candidate_ns": 511.0,
+              "speedup": 13.174168297455969,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0298",
+              "baseline_ns": 13876.0,
+              "candidate_ns": 692.0,
+              "speedup": 20.052023121387283,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0299",
+              "baseline_ns": 13806.0,
+              "candidate_ns": 742.0,
+              "speedup": 18.606469002695416,
+              "group": "synthetic"
+            }
+          ]
+        },
+        "real": {
+          "n": 8,
+          "median": 9.457250434893169,
+          "p25": 7.088098365677842,
+          "p75": 14.193083283534763,
+          "min": 0.875,
+          "max": 34.15362035225049,
+          "mean": 12.2474202693721,
+          "rel_stdev": 0.8289967075736886,
+          "total_ratio": 15.759737098344694,
+          "worst": {
+            "name": "empty.txt",
+            "speedup": 0.875
+          },
+          "best": {
+            "name": "long.txt",
+            "speedup": 34.15362035225049
+          },
+          "rows": [
+            {
+              "name": "config.ini",
+              "baseline_ns": 2234.0,
+              "candidate_ns": 391.0,
+              "speedup": 5.713554987212277,
+              "group": "real"
+            },
+            {
+              "name": "empty.txt",
+              "baseline_ns": 280.0,
+              "candidate_ns": 320.0,
+              "speedup": 0.875,
+              "group": "real"
+            },
+            {
+              "name": "long.txt",
+              "baseline_ns": 34905.0,
+              "candidate_ns": 1022.0,
+              "speedup": 34.15362035225049,
+              "group": "real"
+            },
+            {
+              "name": "notes.md",
+              "baseline_ns": 8907.0,
+              "candidate_ns": 501.0,
+              "speedup": 17.778443113772454,
+              "group": "real"
+            },
+            {
+              "name": "sample.json",
+              "baseline_ns": 4258.0,
+              "candidate_ns": 421.0,
+              "speedup": 10.114014251781473,
+              "group": "real"
+            },
+            {
+              "name": "script.py",
+              "baseline_ns": 6382.0,
+              "candidate_ns": 491.0,
+              "speedup": 12.9979633401222,
+              "group": "real"
+            },
+            {
+              "name": "table.csv",
+              "baseline_ns": 3617.0,
+              "candidate_ns": 411.0,
+              "speedup": 8.800486618004866,
+              "group": "real"
+            },
+            {
+              "name": "unicode.txt",
+              "baseline_ns": 4158.0,
+              "candidate_ns": 551.0,
+              "speedup": 7.5462794918330305,
+              "group": "real"
+            }
+          ]
+        }
+      },
+      "gap": 0.684083969902232,
+      "repeat_inflation": 0.47844383416254255,
+      "verdict": "robust",
+      "exit_code": 0,
+      "mismatches": [],
+      "mismatch_count": 0,
+      "warnings": [
+        "1 real input(s) run in under 2 us; their isolated ratios are timer-noise dominated and were excluded from regression warnings"
+      ],
+      "total_seconds": 0.069
+    },
+    "one-entry-cache": {
+      "schema": 1,
+      "tool": "speedgap",
+      "version": "1.0.0",
+      "generated_at": "2026-11-18T06:17:00+00:00",
+      "config": {
+        "warmup": 3,
+        "reps": 5,
+        "repeat": 1,
+        "threshold": 1.15,
+        "timer": "time.perf_counter_ns",
+        "custom_serializer": false
+      },
+      "environment": {
+        "python": "3.12.3",
+        "implementation": "CPython",
+        "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "cpu_count": 4,
+        "cpu_model": "AMD EPYC 7K62 48-Core Processor",
+        "mem_total_kb": 3812564
+      },
+      "synthetic": {
+        "n": 5,
+        "median": 138.752,
+        "p25": 138.27164166596833,
+        "p75": 139.64225352112678,
+        "min": 134.07834734799482,
+        "max": 140.75451415133955,
+        "mean": 138.2997513372859,
+        "rel_stdev": 0.01838274321823453,
+        "baseline_ns_per_call": 16582.81,
+        "candidate_ns_per_call": 119.33,
+        "calls_per_pass": 200,
+        "samples_ns": [
+          134.07834734799482,
+          138.752,
+          138.27164166596833,
+          140.75451415133955,
+          139.64225352112678
+        ],
+        "inputs": 200
+      },
+      "real": {
+        "n": 5,
+        "median": 0.9832321755802006,
+        "p25": 0.9800941690839534,
+        "p75": 0.9834240267894516,
+        "min": 0.8983760880401855,
+        "max": 0.9842526369405123,
+        "mean": 0.9658758192868607,
+        "rel_stdev": 0.039100889131452224,
+        "baseline_ns_per_call": 11656.75,
+        "candidate_ns_per_call": 11893.5,
+        "calls_per_pass": 8,
+        "samples_ns": [
+          0.9834240267894516,
+          0.8983760880401855,
+          0.9800941690839534,
+          0.9832321755802006,
+          0.9842526369405123
+        ],
+        "inputs": 8
+      },
+      "isolated": {
+        "synthetic": {
+          "n": 200,
+          "median": 57.731490697949994,
+          "p25": 57.48620689655172,
+          "p75": 58.716379310344834,
+          "min": 48.888563049853374,
+          "max": 63.11851851851852,
+          "mean": 58.18144642473414,
+          "rel_stdev": 0.026230124064688463,
+          "total_ratio": 58.14748669221299,
+          "worst": {
+            "name": "synthetic-0000",
+            "speedup": 48.888563049853374
+          },
+          "best": {
+            "name": "synthetic-0017",
+            "speedup": 63.11851851851852
+          },
+          "rows": [
+            {
+              "name": "synthetic-0000",
+              "baseline_ns": 16671.0,
+              "candidate_ns": 341.0,
+              "speedup": 48.888563049853374,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0001",
+              "baseline_ns": 16631.0,
+              "candidate_ns": 301.0,
+              "speedup": 55.25249169435216,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0002",
+              "baseline_ns": 16641.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.38275862068966,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0003",
+              "baseline_ns": 16601.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.07829181494662,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0004",
+              "baseline_ns": 16631.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.18505338078292,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0005",
+              "baseline_ns": 16712.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.47330960854092,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0006",
+              "baseline_ns": 16711.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.62413793103448,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0007",
+              "baseline_ns": 16751.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.612099644128115,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0008",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.39857651245551,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0009",
+              "baseline_ns": 16791.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.9,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0010",
+              "baseline_ns": 16801.0,
+              "candidate_ns": 301.0,
+              "speedup": 55.817275747508305,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0011",
+              "baseline_ns": 16782.0,
+              "candidate_ns": 271.0,
+              "speedup": 61.92619926199262,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0012",
+              "baseline_ns": 16942.0,
+              "candidate_ns": 271.0,
+              "speedup": 62.51660516605166,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0013",
+              "baseline_ns": 17042.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.765517241379314,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0014",
+              "baseline_ns": 16982.0,
+              "candidate_ns": 271.0,
+              "speedup": 62.66420664206642,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0015",
+              "baseline_ns": 17032.0,
+              "candidate_ns": 271.0,
+              "speedup": 62.84870848708487,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0016",
+              "baseline_ns": 16951.0,
+              "candidate_ns": 271.0,
+              "speedup": 62.549815498154985,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0017",
+              "baseline_ns": 17042.0,
+              "candidate_ns": 270.0,
+              "speedup": 63.11851851851852,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0018",
+              "baseline_ns": 17092.0,
+              "candidate_ns": 271.0,
+              "speedup": 63.07011070110701,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0019",
+              "baseline_ns": 16902.0,
+              "candidate_ns": 271.0,
+              "speedup": 62.3690036900369,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0020",
+              "baseline_ns": 16861.0,
+              "candidate_ns": 281.0,
+              "speedup": 60.00355871886121,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0021",
+              "baseline_ns": 16891.0,
+              "candidate_ns": 300.0,
+              "speedup": 56.303333333333335,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0022",
+              "baseline_ns": 16872.0,
+              "candidate_ns": 271.0,
+              "speedup": 62.25830258302583,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0023",
+              "baseline_ns": 16783.0,
+              "candidate_ns": 271.0,
+              "speedup": 61.92988929889299,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0024",
+              "baseline_ns": 16772.0,
+              "candidate_ns": 280.0,
+              "speedup": 59.9,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0025",
+              "baseline_ns": 16782.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.86896551724138,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0026",
+              "baseline_ns": 17142.0,
+              "candidate_ns": 291.0,
+              "speedup": 58.90721649484536,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0027",
+              "baseline_ns": 16772.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.63573883161512,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0028",
+              "baseline_ns": 16782.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.670103092783506,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0029",
+              "baseline_ns": 16801.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.735395189003434,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0030",
+              "baseline_ns": 16872.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.179310344827584,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0031",
+              "baseline_ns": 16792.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.70446735395189,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0032",
+              "baseline_ns": 16781.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.86551724137931,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0033",
+              "baseline_ns": 16912.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.317241379310346,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0034",
+              "baseline_ns": 16902.0,
+              "candidate_ns": 291.0,
+              "speedup": 58.08247422680412,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0035",
+              "baseline_ns": 16792.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.90344827586207,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0036",
+              "baseline_ns": 16791.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.754448398576514,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0037",
+              "baseline_ns": 16791.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.9,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0038",
+              "baseline_ns": 16791.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.70103092783505,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0039",
+              "baseline_ns": 16791.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.9,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0040",
+              "baseline_ns": 16801.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.93448275862069,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0041",
+              "baseline_ns": 16831.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.03793103448276,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0042",
+              "baseline_ns": 16672.0,
+              "candidate_ns": 300.0,
+              "speedup": 55.57333333333333,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0043",
+              "baseline_ns": 16992.0,
+              "candidate_ns": 281.0,
+              "speedup": 60.469750889679716,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0044",
+              "baseline_ns": 17012.0,
+              "candidate_ns": 281.0,
+              "speedup": 60.54092526690391,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0045",
+              "baseline_ns": 16852.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.110344827586204,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0046",
+              "baseline_ns": 16791.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.9,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0047",
+              "baseline_ns": 17012.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.66206896551724,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0048",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.362989323843415,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0049",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.3573883161512,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0050",
+              "baseline_ns": 16682.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.52413793103448,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0051",
+              "baseline_ns": 16671.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.28865979381443,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0052",
+              "baseline_ns": 16661.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.25429553264605,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0053",
+              "baseline_ns": 16692.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.55862068965517,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0054",
+              "baseline_ns": 16661.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.45172413793104,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0055",
+              "baseline_ns": 16771.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.83103448275862,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0056",
+              "baseline_ns": 16671.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.48620689655172,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0057",
+              "baseline_ns": 16671.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.32740213523132,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0058",
+              "baseline_ns": 16651.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.21993127147766,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0059",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.52068965517241,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0060",
+              "baseline_ns": 16672.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.292096219931274,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0061",
+              "baseline_ns": 16632.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.188612099644125,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0062",
+              "baseline_ns": 16682.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.32646048109966,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0063",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.52068965517241,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0064",
+              "baseline_ns": 16762.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.65124555160142,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0065",
+              "baseline_ns": 16981.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.5551724137931,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0066",
+              "baseline_ns": 16821.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.8041237113402,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0067",
+              "baseline_ns": 16781.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.86551724137931,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0068",
+              "baseline_ns": 16782.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.86896551724138,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0069",
+              "baseline_ns": 16772.0,
+              "candidate_ns": 280.0,
+              "speedup": 59.9,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0070",
+              "baseline_ns": 16992.0,
+              "candidate_ns": 281.0,
+              "speedup": 60.469750889679716,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0071",
+              "baseline_ns": 16812.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.97241379310345,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0072",
+              "baseline_ns": 16881.0,
+              "candidate_ns": 281.0,
+              "speedup": 60.07473309608541,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0073",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.5551724137931,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0074",
+              "baseline_ns": 16692.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.55862068965517,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0075",
+              "baseline_ns": 16922.0,
+              "candidate_ns": 291.0,
+              "speedup": 58.15120274914089,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0076",
+              "baseline_ns": 16771.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.83103448275862,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0077",
+              "baseline_ns": 16862.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.945017182130584,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0078",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.52068965517241,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0079",
+              "baseline_ns": 18284.0,
+              "candidate_ns": 291.0,
+              "speedup": 62.83161512027491,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0080",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.5551724137931,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0081",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.52068965517241,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0082",
+              "baseline_ns": 16721.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.65862068965517,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0083",
+              "baseline_ns": 16672.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.330960854092524,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0084",
+              "baseline_ns": 16702.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.39518900343643,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0085",
+              "baseline_ns": 16652.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.25978647686833,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0086",
+              "baseline_ns": 16671.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.48620689655172,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0087",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.39857651245551,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0088",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.52068965517241,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0089",
+              "baseline_ns": 16682.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.52413793103448,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0090",
+              "baseline_ns": 16672.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.48965517241379,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0091",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.5551724137931,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0092",
+              "baseline_ns": 16682.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.52413793103448,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0093",
+              "baseline_ns": 16701.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.391752577319586,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0094",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.3573883161512,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0095",
+              "baseline_ns": 16811.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.76975945017182,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0096",
+              "baseline_ns": 16882.0,
+              "candidate_ns": 291.0,
+              "speedup": 58.013745704467354,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0097",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.3573883161512,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0098",
+              "baseline_ns": 16702.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.39518900343643,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0099",
+              "baseline_ns": 16701.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.58965517241379,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0100",
+              "baseline_ns": 16792.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.90344827586207,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0101",
+              "baseline_ns": 16782.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.86896551724138,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0102",
+              "baseline_ns": 16841.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.87285223367697,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0103",
+              "baseline_ns": 16822.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.00689655172414,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0104",
+              "baseline_ns": 16982.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.55862068965517,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0105",
+              "baseline_ns": 16831.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.03793103448276,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0106",
+              "baseline_ns": 16802.0,
+              "candidate_ns": 300.0,
+              "speedup": 56.00666666666667,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0107",
+              "baseline_ns": 16811.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.96896551724138,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0108",
+              "baseline_ns": 16992.0,
+              "candidate_ns": 291.0,
+              "speedup": 58.391752577319586,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0109",
+              "baseline_ns": 16782.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.86896551724138,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0110",
+              "baseline_ns": 16781.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.666666666666664,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0111",
+              "baseline_ns": 16682.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.32646048109966,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0112",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.5551724137931,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0113",
+              "baseline_ns": 16741.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.727586206896554,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0114",
+              "baseline_ns": 16701.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.58965517241379,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0115",
+              "baseline_ns": 16771.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.83103448275862,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0116",
+              "baseline_ns": 16782.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.86896551724138,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0117",
+              "baseline_ns": 16772.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.83448275862069,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0118",
+              "baseline_ns": 16772.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.83448275862069,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0119",
+              "baseline_ns": 16712.0,
+              "candidate_ns": 280.0,
+              "speedup": 59.68571428571428,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0120",
+              "baseline_ns": 16752.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.765517241379314,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0121",
+              "baseline_ns": 16791.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.9,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0122",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.52068965517241,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0123",
+              "baseline_ns": 16692.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.40213523131673,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0124",
+              "baseline_ns": 16671.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.32740213523132,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0125",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.52068965517241,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0126",
+              "baseline_ns": 16741.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.727586206896554,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0127",
+              "baseline_ns": 16732.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.69655172413793,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0128",
+              "baseline_ns": 16712.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.47330960854092,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0129",
+              "baseline_ns": 17042.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.765517241379314,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0130",
+              "baseline_ns": 16842.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.876288659793815,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0131",
+              "baseline_ns": 16791.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.70103092783505,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0132",
+              "baseline_ns": 17052.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.8,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0133",
+              "baseline_ns": 17023.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.7,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0134",
+              "baseline_ns": 16782.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.670103092783506,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0135",
+              "baseline_ns": 16801.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.93448275862069,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0136",
+              "baseline_ns": 16702.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.59310344827586,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0137",
+              "baseline_ns": 16712.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.42955326460481,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0138",
+              "baseline_ns": 16701.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.391752577319586,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0139",
+              "baseline_ns": 16692.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.36082474226804,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0140",
+              "baseline_ns": 16721.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.460481099656356,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0141",
+              "baseline_ns": 16721.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.460481099656356,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0142",
+              "baseline_ns": 16692.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.40213523131673,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0143",
+              "baseline_ns": 16682.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.32646048109966,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0144",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.32302405498282,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0145",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.5551724137931,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0146",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.3573883161512,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0147",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.32302405498282,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0148",
+              "baseline_ns": 16671.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.48620689655172,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0149",
+              "baseline_ns": 16761.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.796551724137935,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0150",
+              "baseline_ns": 16771.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.63230240549828,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0151",
+              "baseline_ns": 16671.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.28865979381443,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0152",
+              "baseline_ns": 16682.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.36654804270463,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0153",
+              "baseline_ns": 16682.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.52413793103448,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0154",
+              "baseline_ns": 16661.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.45172413793104,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0155",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 280.0,
+              "speedup": 59.575,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0156",
+              "baseline_ns": 16661.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.25429553264605,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0157",
+              "baseline_ns": 16781.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.666666666666664,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0158",
+              "baseline_ns": 16821.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.8041237113402,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0159",
+              "baseline_ns": 16721.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.460481099656356,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0160",
+              "baseline_ns": 16851.0,
+              "candidate_ns": 300.0,
+              "speedup": 56.17,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0161",
+              "baseline_ns": 16731.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.69310344827586,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0162",
+              "baseline_ns": 16741.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.57651245551602,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0163",
+              "baseline_ns": 16711.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.469750889679716,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0164",
+              "baseline_ns": 16832.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.04137931034483,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0165",
+              "baseline_ns": 16661.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.25429553264605,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0166",
+              "baseline_ns": 16641.0,
+              "candidate_ns": 280.0,
+              "speedup": 59.43214285714286,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0167",
+              "baseline_ns": 16661.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.45172413793104,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0168",
+              "baseline_ns": 16701.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.391752577319586,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0169",
+              "baseline_ns": 16682.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.32646048109966,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0170",
+              "baseline_ns": 16661.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.25429553264605,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0171",
+              "baseline_ns": 16671.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.48620689655172,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0172",
+              "baseline_ns": 16662.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.295373665480426,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0173",
+              "baseline_ns": 16711.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.62413793103448,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0174",
+              "baseline_ns": 16662.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.4551724137931,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0175",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.5551724137931,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0176",
+              "baseline_ns": 16701.0,
+              "candidate_ns": 301.0,
+              "speedup": 55.48504983388705,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0177",
+              "baseline_ns": 16732.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.69655172413793,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0178",
+              "baseline_ns": 16671.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.48620689655172,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0179",
+              "baseline_ns": 16821.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.8041237113402,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0180",
+              "baseline_ns": 16702.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.437722419928825,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0181",
+              "baseline_ns": 16761.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.597938144329895,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0182",
+              "baseline_ns": 16741.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.529209621993125,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0183",
+              "baseline_ns": 16701.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.391752577319586,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0184",
+              "baseline_ns": 16831.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.83848797250859,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0185",
+              "baseline_ns": 16741.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.57651245551602,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0186",
+              "baseline_ns": 16731.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.69310344827586,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0187",
+              "baseline_ns": 16832.0,
+              "candidate_ns": 290.0,
+              "speedup": 58.04137931034483,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0188",
+              "baseline_ns": 16672.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.292096219931274,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0189",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.32302405498282,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0190",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.39857651245551,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0191",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.32302405498282,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0192",
+              "baseline_ns": 16681.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.32302405498282,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0193",
+              "baseline_ns": 16701.0,
+              "candidate_ns": 281.0,
+              "speedup": 59.43416370106762,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0194",
+              "baseline_ns": 16731.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.69310344827586,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0195",
+              "baseline_ns": 16672.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.48965517241379,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0196",
+              "baseline_ns": 16701.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.58965517241379,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0197",
+              "baseline_ns": 16712.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.62758620689655,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0198",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 291.0,
+              "speedup": 57.3573883161512,
+              "group": "synthetic"
+            },
+            {
+              "name": "synthetic-0199",
+              "baseline_ns": 16691.0,
+              "candidate_ns": 290.0,
+              "speedup": 57.5551724137931,
+              "group": "synthetic"
+            }
+          ]
+        },
+        "real": {
+          "n": 8,
+          "median": 35.146285104870245,
+          "p25": 26.93852233676976,
+          "p75": 43.09741379310344,
+          "min": 3.2714776632302405,
+          "max": 105.00687285223368,
+          "mean": 39.87446172532291,
+          "rel_stdev": 0.7449029158671039,
+          "total_ratio": 39.80077120822622,
+          "worst": {
+            "name": "empty.txt",
+            "speedup": 3.2714776632302405
+          },
+          "best": {
+            "name": "long.txt",
+            "speedup": 105.00687285223368
+          },
+          "rows": [
+            {
+              "name": "config.ini",
+              "baseline_ns": 6452.0,
+              "candidate_ns": 300.0,
+              "speedup": 21.506666666666668,
+              "group": "real"
+            },
+            {
+              "name": "empty.txt",
+              "baseline_ns": 952.0,
+              "candidate_ns": 291.0,
+              "speedup": 3.2714776632302405,
+              "group": "real"
+            },
+            {
+              "name": "long.txt",
+              "baseline_ns": 30557.0,
+              "candidate_ns": 291.0,
+              "speedup": 105.00687285223368,
+              "group": "real"
+            },
+            {
+              "name": "notes.md",
+              "baseline_ns": 14227.0,
+              "candidate_ns": 290.0,
+              "speedup": 49.05862068965517,
+              "group": "real"
+            },
+            {
+              "name": "sample.json",
+              "baseline_ns": 10480.0,
+              "candidate_ns": 290.0,
+              "speedup": 36.13793103448276,
+              "group": "real"
+            },
+            {
+              "name": "script.py",
+              "baseline_ns": 11922.0,
+              "candidate_ns": 290.0,
+              "speedup": 41.110344827586204,
+              "group": "real"
+            },
+            {
+              "name": "table.csv",
+              "baseline_ns": 8366.0,
+              "candidate_ns": 291.0,
+              "speedup": 28.74914089347079,
+              "group": "real"
+            },
+            {
+              "name": "unicode.txt",
+              "baseline_ns": 9939.0,
+              "candidate_ns": 291.0,
+              "speedup": 34.154639175257735,
+              "group": "real"
+            }
+          ]
+        }
+      },
+      "gap": 141.11824597086962,
+      "repeat_inflation": 35.74566209057448,
+      "verdict": "synthetic-only",
+      "exit_code": 1,
+      "mismatches": [],
+      "mismatch_count": 0,
+      "warnings": [
+        "repeat inflation 35.75x: the candidate looks 35.15x faster when one input is repeated, but only 0.98x faster on interleaved real inputs; the workload number is used for the verdict",
+        "at least 25% of real passes were slower than baseline (p25 0.980x)",
+        "1 real input(s) run in under 2 us; their isolated ratios are timer-noise dominated and were excluded from regression warnings"
+      ],
+      "total_seconds": 0.064
+    },
+    "drift": {
+      "schema": 1,
+      "tool": "speedgap",
+      "version": "1.0.0",
+      "generated_at": "2026-11-18T06:17:00+00:00",
+      "config": {
+        "warmup": 1,
+        "reps": 3,
+        "repeat": 1,
+        "threshold": 1.15,
+        "timer": "time.perf_counter_ns",
+        "custom_serializer": false
+      },
+      "environment": {
+        "python": "3.12.3",
+        "implementation": "CPython",
+        "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.39",
+        "machine": "x86_64",
+        "cpu_count": 4,
+        "cpu_model": "AMD EPYC 7K62 48-Core Processor",
+        "mem_total_kb": 3812564
+      },
+      "synthetic": null,
+      "real": null,
+      "isolated": null,
+      "gap": null,
+      "repeat_inflation": null,
+      "verdict": "semantic-mismatch",
+      "exit_code": 2,
+      "mismatches": [
+        {
+          "name": "unicode.txt",
+          "group": "real",
+          "baseline": {
+            "kind": "value",
+            "sha256": "e20b872e7a16353a6ab1c51cd3d66f2c9a5cc3298b2e0d31474ae254c183b152",
+            "size": 246
+          },
+          "candidate": {
+            "kind": "value",
+            "sha256": "a9b886301551118789f4932a090fe52afa4ea37472718aacd29ded082578af2c",
+            "size": 245
+          }
+        }
+      ],
+      "mismatch_count": 1,
+      "warnings": [],
+      "total_seconds": 0.001
+    }
+  },
+  "aa_null": {
+    "runs": [
+      {
+        "real_median": 1.0013522421865757,
+        "real_p25": 1.0011838122135597,
+        "real_p75": 1.0027204677176798,
+        "synthetic_median": 0.9816054834245039,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.99968067763567,
+        "real_p25": 0.9959576224082465,
+        "real_p75": 1.043780041007025,
+        "synthetic_median": 0.9787375157317147,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.972182816258558,
+        "real_p25": 0.9633174618598775,
+        "real_p75": 0.9816803026873201,
+        "synthetic_median": 1.011361564162239,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0050672547600208,
+        "real_p25": 1.0020164000537706,
+        "real_p75": 1.0069015314347125,
+        "synthetic_median": 1.0276063222769154,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9912733241767445,
+        "real_p25": 0.8661392808117402,
+        "real_p75": 1.0001680333378142,
+        "synthetic_median": 0.9946803389925251,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0097484587277628,
+        "real_p25": 0.880068174857858,
+        "real_p75": 1.0449036460081917,
+        "synthetic_median": 1.0187655655732957,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.1542396350900057,
+        "real_p25": 1.0112693560847805,
+        "real_p75": 1.16412472189082,
+        "synthetic_median": 0.9811431885043582,
+        "verdict": "robust"
+      },
+      {
+        "real_median": 0.9989890650536638,
+        "real_p25": 0.9978184991273996,
+        "real_p75": 1.016890924706556,
+        "synthetic_median": 0.9554363420504526,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9749116260801257,
+        "real_p25": 0.8788689064274522,
+        "real_p75": 1.0318973596613128,
+        "synthetic_median": 0.9773506398346113,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.987818880734861,
+        "real_p25": 0.9727768285737531,
+        "real_p75": 0.9964951703783204,
+        "synthetic_median": 0.9951539819791748,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0006556605359604,
+        "real_p25": 0.9906415999200706,
+        "real_p75": 1.0060793856620804,
+        "synthetic_median": 0.9242402826855124,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0055441685427238,
+        "real_p25": 0.9996640970087839,
+        "real_p75": 1.038871444961053,
+        "synthetic_median": 1.013622508792497,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9986618045565555,
+        "real_p25": 0.998490464769125,
+        "real_p75": 1.0157546160021407,
+        "synthetic_median": 0.9745832000284382,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9919728981008644,
+        "real_p25": 0.8407118485693655,
+        "real_p75": 1.028121428091172,
+        "synthetic_median": 1.023452422587501,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0189070016034207,
+        "real_p25": 0.9951176135029026,
+        "real_p75": 1.0634510093715361,
+        "synthetic_median": 1.005690029508836,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9700742432895488,
+        "real_p25": 0.9676583258619285,
+        "real_p75": 0.9768870867124142,
+        "synthetic_median": 1.0434074610171722,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9746933131823078,
+        "real_p25": 0.9653211128445138,
+        "real_p75": 0.9826375695901409,
+        "synthetic_median": 1.044322734910172,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9846044375444725,
+        "real_p25": 0.9789696427118092,
+        "real_p75": 1.009660236107112,
+        "synthetic_median": 1.0226588186235985,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0180364859085345,
+        "real_p25": 0.9755626166999705,
+        "real_p75": 1.0434782608695652,
+        "synthetic_median": 1.0152725385821812,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9670872902302589,
+        "real_p25": 0.966059387966805,
+        "real_p75": 0.9907299175271121,
+        "synthetic_median": 1.0213111740024032,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9927926115888102,
+        "real_p25": 0.963959603781499,
+        "real_p75": 0.9941346024936318,
+        "synthetic_median": 0.9715307865847327,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.00570600886626,
+        "real_p25": 0.9753988272676647,
+        "real_p75": 1.08095823302638,
+        "synthetic_median": 0.9788839885943662,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9990095852008528,
+        "real_p25": 0.9942863845045408,
+        "real_p75": 1.0085646210316184,
+        "synthetic_median": 1.0171349227451327,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9933201963862263,
+        "real_p25": 0.9915124991711425,
+        "real_p75": 0.9976856791136643,
+        "synthetic_median": 0.987376252589507,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9703636304552692,
+        "real_p25": 0.9659515907067109,
+        "real_p75": 0.980898839464773,
+        "synthetic_median": 1.042660466661131,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0169796110308689,
+        "real_p25": 1.0046605741960095,
+        "real_p75": 1.094271077479408,
+        "synthetic_median": 1.0127042574659626,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9917633468936768,
+        "real_p25": 0.9244319826889963,
+        "real_p75": 1.0181330402740967,
+        "synthetic_median": 1.0050108775895523,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0060910972388148,
+        "real_p25": 0.9549137020077492,
+        "real_p75": 1.0201874307211716,
+        "synthetic_median": 1.013187815626528,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9916211840502062,
+        "real_p25": 0.9904812798503724,
+        "real_p75": 0.9937089217422975,
+        "synthetic_median": 1.0172885169396757,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9963334555514817,
+        "real_p25": 0.9921384697556416,
+        "real_p75": 1.0051968081539597,
+        "synthetic_median": 1.0052934608606752,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9926601534543881,
+        "real_p25": 0.9916251546253887,
+        "real_p75": 1.0,
+        "synthetic_median": 0.9959364733110759,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9916058693335519,
+        "real_p25": 0.9800900220126819,
+        "real_p75": 0.9988275099661653,
+        "synthetic_median": 1.0392614459703273,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9994964922291968,
+        "real_p25": 0.9984833420400735,
+        "real_p75": 1.0000167979708052,
+        "synthetic_median": 1.0094114016817095,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9975411448429611,
+        "real_p25": 0.9934332268893802,
+        "real_p75": 1.0958093234310478,
+        "synthetic_median": 0.9998999943330122,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9821641486320948,
+        "real_p25": 0.9735734752353663,
+        "real_p75": 1.0005959830740807,
+        "synthetic_median": 0.9979138361475302,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.005027483576887,
+        "real_p25": 1.000823640153298,
+        "real_p75": 1.0564178203881869,
+        "synthetic_median": 0.9975859739056785,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9986545803131465,
+        "real_p25": 0.9966432251892382,
+        "real_p75": 1.001836500876129,
+        "synthetic_median": 1.0036329508643396,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9801259346713892,
+        "real_p25": 0.9651240341602277,
+        "real_p75": 1.0126834540879228,
+        "synthetic_median": 1.0385993906596933,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9490173557937723,
+        "real_p25": 0.9038728050804867,
+        "real_p75": 0.9542348079180536,
+        "synthetic_median": 1.016488906445454,
+        "verdict": "regression"
+      },
+      {
+        "real_median": 0.9901519696060788,
+        "real_p25": 0.9865845906794687,
+        "real_p75": 0.9932844319399786,
+        "synthetic_median": 1.0001341381623072,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.993964603213441,
+        "real_p25": 0.9905224302484121,
+        "real_p75": 1.0028633507941587,
+        "synthetic_median": 0.9946833048470868,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0005060643376462,
+        "real_p25": 0.9944743080364595,
+        "real_p75": 1.0007948609804367,
+        "synthetic_median": 1.0140753933887807,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.151699475284917,
+        "real_p25": 1.0786220425834165,
+        "real_p75": 1.1684814821086857,
+        "synthetic_median": 0.9577541089554319,
+        "verdict": "robust"
+      },
+      {
+        "real_median": 0.9990155509577521,
+        "real_p25": 0.995828605753187,
+        "real_p75": 0.9995131042124881,
+        "synthetic_median": 1.0024088576468702,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9944482764421864,
+        "real_p25": 0.9868401375803798,
+        "real_p75": 0.9947864279487695,
+        "synthetic_median": 0.9727823005521352,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9979781301073276,
+        "real_p25": 0.9510215167335607,
+        "real_p75": 1.021129491914133,
+        "synthetic_median": 1.0449177078928766,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.99648194062856,
+        "real_p25": 0.9234117582235936,
+        "real_p75": 1.004397375002098,
+        "synthetic_median": 1.00026064901605,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9697528346520924,
+        "real_p25": 0.9391967621419676,
+        "real_p75": 1.0355336771895634,
+        "synthetic_median": 1.0068162333030097,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9968239109357762,
+        "real_p25": 0.9643267751599061,
+        "real_p75": 1.0003146528881823,
+        "synthetic_median": 1.0015413028878444,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.983241415534108,
+        "real_p25": 0.9595728942205641,
+        "real_p75": 0.9888114453411592,
+        "synthetic_median": 1.0429068871999199,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9996627944226197,
+        "real_p25": 0.9734955499305953,
+        "real_p75": 1.0420663957781862,
+        "synthetic_median": 0.9757551512925776,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9924380573168488,
+        "real_p25": 0.9683602317739877,
+        "real_p75": 0.9934451448923967,
+        "synthetic_median": 1.0028981321655732,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9956275547812102,
+        "real_p25": 0.9919997338788816,
+        "real_p75": 1.0028656656388255,
+        "synthetic_median": 1.0034054810746784,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.010103892180393,
+        "real_p25": 1.0053893421980458,
+        "real_p75": 1.0274541450210992,
+        "synthetic_median": 1.0005632570837864,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9996648905867765,
+        "real_p25": 0.9863860785107244,
+        "real_p75": 1.0260368476584694,
+        "synthetic_median": 1.0083860812485348,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9989938119434523,
+        "real_p25": 0.9936135527133998,
+        "real_p75": 1.0003194780737155,
+        "synthetic_median": 1.0530290150287906,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0253947476069705,
+        "real_p25": 0.986940572267058,
+        "real_p75": 1.0468233986201485,
+        "synthetic_median": 1.0578680236901077,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9692412628296739,
+        "real_p25": 0.9500854264135277,
+        "real_p75": 1.0045699060724103,
+        "synthetic_median": 0.9834620227144252,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9991557049019774,
+        "real_p25": 0.9766900531112714,
+        "real_p75": 1.1897464334324748,
+        "synthetic_median": 1.0072058294641961,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9984887157442235,
+        "real_p25": 0.9983076949112386,
+        "real_p75": 1.0190873743919475,
+        "synthetic_median": 1.0054543988062832,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9961909809052216,
+        "real_p25": 0.9844290371154832,
+        "real_p75": 0.9971366492058412,
+        "synthetic_median": 1.0134884985731745,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9901337681352322,
+        "real_p25": 0.968901878365953,
+        "real_p75": 1.0213022508038585,
+        "synthetic_median": 1.0172929406496865,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0031903041760912,
+        "real_p25": 0.9542592562923562,
+        "real_p75": 1.003546039411695,
+        "synthetic_median": 1.012728567559706,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0306607363311968,
+        "real_p25": 1.022440699651521,
+        "real_p75": 1.057030249949471,
+        "synthetic_median": 1.0381310346682446,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0449658360128617,
+        "real_p25": 0.9983247336326476,
+        "real_p75": 1.0477012843298348,
+        "synthetic_median": 1.0059147378627096,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9729304839105871,
+        "real_p25": 0.9546527120086039,
+        "real_p75": 0.9924597070821909,
+        "synthetic_median": 1.0380688127942135,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9862104442195045,
+        "real_p25": 0.9073731679819617,
+        "real_p75": 0.9978047022941698,
+        "synthetic_median": 0.98274580677268,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0030475998046842,
+        "real_p25": 0.9951236737233273,
+        "real_p75": 1.0593376187342882,
+        "synthetic_median": 1.044289425103331,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0011916550578204,
+        "real_p25": 0.9962418247486415,
+        "real_p75": 1.091742976632826,
+        "synthetic_median": 1.0115500061631126,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9841059821709145,
+        "real_p25": 0.8734557938906659,
+        "real_p75": 0.998160904166388,
+        "synthetic_median": 1.001455244642428,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.017673419378661,
+        "real_p25": 1.0157616160262637,
+        "real_p75": 1.0703984437885699,
+        "synthetic_median": 1.0444011060203304,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0172050975572802,
+        "real_p25": 1.0032154340836013,
+        "real_p75": 1.0258555261338145,
+        "synthetic_median": 1.0123923212769113,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9904717328073284,
+        "real_p25": 0.9851760756485467,
+        "real_p75": 0.9941950143466074,
+        "synthetic_median": 0.9875865686606509,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9934659043555082,
+        "real_p25": 0.9887313222908014,
+        "real_p75": 1.0079411913473049,
+        "synthetic_median": 1.0099316189034566,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0135982829052137,
+        "real_p25": 0.9964974610782457,
+        "real_p75": 1.0653161019909185,
+        "synthetic_median": 0.909901786069089,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9998154424348176,
+        "real_p25": 0.9958028159593325,
+        "real_p75": 1.0839243696076633,
+        "synthetic_median": 0.9446905889457459,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.007706195045301,
+        "real_p25": 1.0003159662747576,
+        "real_p75": 1.0131073900873266,
+        "synthetic_median": 1.0642290323994914,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.997323609113111,
+        "real_p25": 0.9954599720872358,
+        "real_p75": 1.0158583188835204,
+        "synthetic_median": 0.9743764045641351,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0622290867420656,
+        "real_p25": 0.9934664611673256,
+        "real_p75": 1.1120580754914016,
+        "synthetic_median": 1.021863756904211,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9967894843004101,
+        "real_p25": 0.994794282079609,
+        "real_p75": 0.9976485499391291,
+        "synthetic_median": 1.0104791505816983,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.985188383175863,
+        "real_p25": 0.9818523153942428,
+        "real_p75": 0.9993443284410147,
+        "synthetic_median": 1.0001221255808412,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0419448042243697,
+        "real_p25": 1.0018458853537389,
+        "real_p75": 1.0652313996331972,
+        "synthetic_median": 1.0077622004967004,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9948272707616054,
+        "real_p25": 0.9676959466027282,
+        "real_p75": 1.0037122891890076,
+        "synthetic_median": 1.002570596187901,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.000504778570467,
+        "real_p25": 0.9855513800699753,
+        "real_p75": 1.0008424457886136,
+        "synthetic_median": 1.0479867311054532,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9995174869388705,
+        "real_p25": 0.9989768877260071,
+        "real_p75": 1.0122298065984072,
+        "synthetic_median": 1.0098628060431583,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9971520471755009,
+        "real_p25": 0.9899602418896796,
+        "real_p75": 1.0199082970904554,
+        "synthetic_median": 1.021126643451306,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0032077797099492,
+        "real_p25": 0.9978074243983066,
+        "real_p75": 1.0437240672474501,
+        "synthetic_median": 1.0848518126401483,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0051151761517616,
+        "real_p25": 1.0,
+        "real_p75": 1.0613274057362772,
+        "synthetic_median": 0.9875813763616441,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9718167929005623,
+        "real_p25": 0.9626187758252006,
+        "real_p75": 0.9835524679588149,
+        "synthetic_median": 1.015498304822554,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9959644196330985,
+        "real_p25": 0.9723939965554006,
+        "real_p75": 1.0258117830060276,
+        "synthetic_median": 1.045371725277319,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0011621639830224,
+        "real_p25": 1.0001684323996565,
+        "real_p75": 1.0256204570755025,
+        "synthetic_median": 1.034016955027389,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0225267223868668,
+        "real_p25": 1.0000168007929975,
+        "real_p75": 1.0279956903807952,
+        "synthetic_median": 1.0068349545729658,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0426736983351796,
+        "real_p25": 1.0071028732813583,
+        "real_p75": 1.2452006838720182,
+        "synthetic_median": 0.9864426356613881,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0091198732320763,
+        "real_p25": 0.9972910216718266,
+        "real_p75": 1.1278521179966756,
+        "synthetic_median": 1.0076855848583304,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.991362342415616,
+        "real_p25": 0.962258074904196,
+        "real_p75": 0.9980653274433302,
+        "synthetic_median": 1.0816884280175485,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0040287383334452,
+        "real_p25": 0.9991582633289002,
+        "real_p75": 1.050725236921754,
+        "synthetic_median": 0.9992962180983072,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9677404302312921,
+        "real_p25": 0.963554635708049,
+        "real_p75": 0.9691331715953052,
+        "synthetic_median": 1.0433645840946693,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0375091893336899,
+        "real_p25": 1.0353624442521467,
+        "real_p75": 1.116343862240274,
+        "synthetic_median": 1.0486948356807513,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 0.9954288019091474,
+        "real_p25": 0.9929862062055376,
+        "real_p75": 1.0105815669439226,
+        "synthetic_median": 1.0374536104247893,
+        "verdict": "no-gain"
+      },
+      {
+        "real_median": 1.0048903053911402,
+        "real_p25": 1.0010061711832574,
+        "real_p75": 1.069646460871515,
+        "synthetic_median": 1.0135226328057507,
+        "verdict": "no-gain"
+      }
+    ],
+    "run_count": 100,
+    "false_positive_count": 2,
+    "false_positive_rate": 0.02,
+    "median_only_robust_count": 2,
+    "median_only_robust_rate": 0.02,
+    "real_median_min": 0.9490173557937723,
+    "real_median_max": 1.1542396350900057,
+    "verdicts": [
+      "no-gain",
+      "regression",
+      "robust"
+    ]
+  }
+}

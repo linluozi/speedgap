@@ -1,0 +1,43 @@
+"""speedgap: does the synthetic speedup survive on real inputs?"""
+
+from .core import (
+    Case,
+    EXIT_CODES,
+    EXIT_FAILED,
+    EXIT_MISMATCH,
+    EXIT_ROBUST,
+    REGRESSION,
+    SCHEMA_VERSION,
+    THRESHOLD,
+    __version__,
+    classify,
+    compare,
+    default_serializer,
+    environment_info,
+    measure_isolated,
+    measure_workload,
+    observe,
+    quantile,
+    summarize,
+)
+
+__all__ = [
+    "Case",
+    "EXIT_CODES",
+    "EXIT_FAILED",
+    "EXIT_MISMATCH",
+    "EXIT_ROBUST",
+    "REGRESSION",
+    "SCHEMA_VERSION",
+    "THRESHOLD",
+    "__version__",
+    "classify",
+    "compare",
+    "default_serializer",
+    "environment_info",
+    "measure_isolated",
+    "measure_workload",
+    "observe",
+    "quantile",
+    "summarize",
+]

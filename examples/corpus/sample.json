@@ -1,0 +1,7 @@
+{
+  "service": "indexer",
+  "version": "2.4.1",
+  "features": ["cache", "matrix", "vortex"],
+  "limits": {"max_tokens": 4096, "timeout_ms": 750},
+  "notes": "next release relaxes the syntax check for xenon exports"
+}

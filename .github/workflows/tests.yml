@@ -1,0 +1,42 @@
+name: tests
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        python: ["3.10", "3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: install
+        run: python -m pip install -e .
+      - name: unit tests
+        run: python -m unittest discover -s tests -t . -v
+      - name: genuine scenario must exit 0 and be robust
+        run: |
+          speedgap run --spec examples/spec-genuine.json --json /tmp/genuine.json
+          python -c "import json; r=json.load(open('/tmp/genuine.json')); assert r['verdict']=='robust', r['verdict']"
+      - name: memoising scenario must exit 1 and warn about repeat inflation
+        run: |
+          set +e
+          speedgap run --spec examples/spec-identity-cache.json --json /tmp/cache.json
+          code=$?
+          set -e
+          test "$code" -eq 1
+          python -c "import json; r=json.load(open('/tmp/cache.json')); assert r['verdict']=='synthetic-only', r['verdict']; assert r['repeat_inflation'] > 1.5"
+      - name: semantic drift must exit 2
+        run: |
+          set +e
+          speedgap run --spec examples/spec-drift.json --json /tmp/drift.json
+          code=$?
+          set -e
+          test "$code" -eq 2
+          python -c "import json; r=json.load(open('/tmp/drift.json')); assert r['verdict']=='semantic-mismatch'; assert r['mismatch_count'] >= 1"
